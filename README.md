@@ -1,6 +1,9 @@
 # Image-E-Shop
 An Image E-Shop created to buy images
 
+The project was designed for the Fall 2022 Shopify Data Engineer Intern Challenge Question:
+https://docs.google.com/document/d/1ijXrqQMOORukOWCWcwwcpxPcF_TczwvNE0wB4M2Orqg/edit#heading=h.n7bww7g70ipk
+
 
 # How To Access Image E-Shop
 
