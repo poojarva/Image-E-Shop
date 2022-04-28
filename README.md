@@ -48,4 +48,11 @@ Then you can access 'Sellers Dashboard' in order to see all of the sellers and t
 
 Click 'Main page' to return back to the Homepage and 'Reset Database' to reset the database!
 
+# Testing
+
+I used PyTest in order to test the Flask app that was built on Python and SQLite3
+
+# Future Implementations
+In terms of architecture, I have designed a two-tier architecture which, in the future, I would like to implement a three-tier architecture for better security and sustainability of the database on the website. In addition, I would like to implement a login feature in order to track each seller/buyer and allow different users to also sell items in the website. This would be an efficient implemntation that would consist of a few more post and get methods along with writing a few more SQL queries by joining different tables.
+
 
