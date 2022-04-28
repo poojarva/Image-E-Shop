@@ -33,7 +33,14 @@ You will see the following website:
 
 Using the Buy button, you can buy a certain image and continue to buy that item until the quantity runs out (in which the product will automatically be removed from the database)
 
+You can also see the total amount you have bought and how many products are still in stock:
+
+![image](https://user-images.githubusercontent.com/68351986/165836582-f5b7143e-dd72-47fc-b3c3-472444afb019.png)
+
+
 Then you can access 'Sellers Dashboard' in order to see all of the sellers and the total profits they have made on x amount of products they have sold!
+
+![image](https://user-images.githubusercontent.com/68351986/165836724-58e07759-c9be-4e26-a2b7-6a91e4ad3474.png)
 
 
 Click 'Main page' to return back to the Homepage and 'Reset Database' to reset the database!
