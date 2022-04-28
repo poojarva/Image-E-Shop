@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+    <title>Image E-Shop</title>
+    <style>
+    html {
+      font-family: sans-serif;
+      font-size: 20px;
+      
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200,200,200);
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    td, th {
+      border: 1px solid rgb(190,190,190);
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    caption {
+      padding: 10px;
+    }
+    
+    button {
+    color: green;
+     font-size: 20px;
+    }
+    
+    p {
+     text-align: center;
+    }
+    
+    body{
+    background-image: url("static/background.webp");
+    }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+    </style>
+    
+  </head>
+    <body>
+        <a href="/">Main page</a> <br>
+       <div style="text-align:center"> <button type="button"> <a href='/showSeller'> Sellers Dashboard </button> </div> <br>
+        <a href="/reset">Reset Database!</a> <br>
+
+        <br>
+        <p>You have bought ${{spending}} in products so far!</p> 
+        <p>There are a total of {{total_prod_num}} products left - hurry and buy them before they're sold out!</p> <br>
+        <table class="center">
+       
+     <!-- Set the Table Headers -->  
+                <tr>
+                  <th style="background-color: #82E0AA">Image</th>
+                <th style="background-color: #DAF7A6 ">Name</th>
+                <th style="background-color: #9FE2BF" >Price</th>
+                <th style="background-color: #CCCCFF">Stock</th>           
+                <th style="background-color: #A9CCE3">Buy</th>
+            </tr>
+        
+            
+       <!-- Set the values for each row from product table -->    
+            {% for product in products %}  					    
+                <tr>
+                <td><img src={{product["src"]}} height="120" width="120"/> </td>
+                <td>{{product["name"]}}</td>
+                <td>{{product["price"]}}</td>
+                <td>{{product["stock"]}}</td>    
+                <td><button type="button"> <a href='/buy/{{product["id"]}}'/>BUY</button></td> 
+    
+                </td>                
+                </tr>         
+           {% endfor %}
+               
+        </table>       
+        <br>  </br>      
+    </body>
+   
+</html>

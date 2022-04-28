@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+    <title>Sellers Dashboard</title>
+      
+    <style>
+    html {
+      font-family: sans-serif;
+      font-size: 20px;
+     
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200,200,200);
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+    }
+
+    td, th {
+      border: 1px solid rgb(190,190,190);
+      padding: 10px 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    caption {
+      padding: 10px;
+    }
+    
+    button {
+    color: green;
+     font-size: 20px;
+    }
+    
+
+  body{
+  background-image: url("static/background.webp");
+  }
+  
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  </style>
+  </head>
+  
+    <body>
+        <a href="/">Main page</a> <br>
+        <br>
+        <table class="center">
+         <!-- Set the Table Headers --> 
+             <tr>
+                <th style="background-color: #DAF7A6 ">Seller's ID</th>
+                <th style="background-color: #9FE2BF" >Total Amount Sold</th>
+                <th style="background-color: #CCCCFF">Total Profits</th>
+             </tr>
+             <!-- Set the values for each row from order history table --> 
+            {% for order in orders %}				    
+                <tr>
+                <td>{{order["seller_id"]}}</td>
+                <td>{{order["tl_orders"]}}</td>
+                <td>{{order["tl_amount"]}}</td>
+                
+                
+                </tr>
+          
+           {% endfor %}
+            
+          
+            
+        </table>
+        
+        <br>
+        </br>
+
+          
+        
+    </body>
+   
+</html>
